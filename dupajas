@@ -6,12 +6,33 @@
     <title>Dupa jas</title>
 </head>
 <body>
-    
+
 
 <script>
-    const liczba1 = prompt("Podaj liczbe 1: ");
-    const liczba2 = prompt("Podaj liczbe 2: ");
-    document.write (liczba1 + liczba2);
+    let liczba1 = parseFloat(prompt("Podaj liczbe 1: "));
+    let liczba2 = parseFloat(prompt("Podaj liczbe 2: "));
+    let dzialanie = prompt("Podaj rodzaj dzialania(+,-,*,/): ")
+
+    switch(dzialanie) {
+        case "+":
+            document.write ("Suma liczb to: " + (liczba1 + liczba2));
+            break;
+        case "-":
+            document.write ("Różnica liczb to: " + (liczba1 - liczba2));
+            break;
+        case "*":
+            document.write ("Iloczyn liczb to: " + (liczba1 * liczba2));
+            break;
+        case "/":
+            if (liczba2 < 0 ){
+                document.write ("Jesteś debilem")
+                break;
+            }
+            else {
+                document.write ("Iloraz liczb to: " + (liczba1 / liczba2));
+                break;
+            }
+    }
 </script>
 </body>
 </html>
