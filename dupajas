@@ -1,1 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dupa jas</title>
+</head>
+<body>
+    
 
+<script>
+    const liczba1 = prompt("Podaj liczbe 1: ");
+    const liczba2 = prompt("Podaj liczbe 2: ");
+    document.write (liczba1 + liczba2);
+</script>
+</body>
+</html>
