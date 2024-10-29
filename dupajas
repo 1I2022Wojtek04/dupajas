@@ -10,7 +10,27 @@
 
 <script>
     let liczba1 = parseFloat(prompt("Podaj liczbe 1: "));
+
+    while(true){
+        if(isNaN(liczba1)){
+            continue;
+        }
+        else{
+            break;
+        }
+        
+    }
+
     let liczba2 = parseFloat(prompt("Podaj liczbe 2: "));
+    while(true){
+        if(isNaN(liczba2)){
+            continue;
+        }
+        else{
+            break;
+        }
+        
+    }
     let dzialanie = prompt("Podaj rodzaj dzialania(+,-,*,/): ")
 
     switch(dzialanie) {
@@ -25,7 +45,7 @@
             break;
         case "/":
             if (liczba2 < 0 ){
-                document.write ("Jesteś debilem")
+                document.write ("Jesteś debilem, nie dzielimy przez 0")
                 break;
             }
             else {
